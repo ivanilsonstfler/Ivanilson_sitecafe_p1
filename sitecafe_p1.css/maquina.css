@@ -71,6 +71,7 @@ body {
 
 .container {
     background-color: #fff;
+    margin-bottom: 60px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -116,7 +117,15 @@ tbody tr:nth-child(even) {
     font-style: italic;
     color: #555;
 }
-
+footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a18262;
+	padding: 10px;
+    text-align: center;
+}
 footer p{
 	text-align: center;
 	color: rgb(231, 208, 208);
