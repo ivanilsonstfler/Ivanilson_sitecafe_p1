@@ -4,11 +4,83 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
+
+form {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #a0522d;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: calc(100% - 120px);
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 50px;
+    resize: none;
+}
+
+button[type="button"] {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #d2691e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover,
+button[type="button"]:hover {
+    background-color: #a0522d;
+}
+
+.cartao img {
+    width: 50px;
+    vertical-align: middle;
+}
+
 
 footer{
     position:fixed;
