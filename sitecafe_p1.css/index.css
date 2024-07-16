@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:' Roboto',sans-serif;
 }
 header{
     background-color: #a18262;
-    padding: 1.2rem;
+    padding: 1.1rem;
 }
 li{
     list-style: none;
@@ -56,10 +56,11 @@ padding: 0 34px;
     transition: all 0.3s ease-in-out;
 }
 body{
+    font-family: 'Roboto',  sans-serif;
     background-image: url(../imagens/desktip.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;abackground-size: 100%;
+    background-position: center;
     background-size: 100%;
     background-attachment: fixed;
     width: 100%;
@@ -92,8 +93,13 @@ body{
     transition: 0.3s all;
 }
 footer{
-	background-color: #a18262;
-	padding: 20px;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a18262;
+	padding: 10px;
+    text-align: center;
 }
 
 footer p{
