@@ -9,6 +9,13 @@ header{
     background-color: #a18262;
     padding: 1.1rem;
 }
+img{
+    height: 75px;
+    width: 75px;
+    margin-top: 1px;
+    cursor: pointer;
+
+}
 li{
     list-style: none;
 }
