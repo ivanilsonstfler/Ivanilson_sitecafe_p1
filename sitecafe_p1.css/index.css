@@ -1,156 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:' Roboto',sans-serif;
-}
-header{
-    background-color: #a18262;
-    padding: 1.1rem;
-}
-img{
-    height: 75px;
-    width: 75px;
-    margin-top: 1px;
-    cursor: pointer;
-
-}
-li{
-    list-style: none;
-}
-a{
-    color: #fff;
-    text-decoration: none;
-}
-.navBar{
- min-width: 70px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 34px;
-}
-.logo{
-    font-size: 2rem;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
-.nav-menu{
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.nav-link{
-    transition: 0.5s ease;
-}
-.nav-link:hover{
-    color: #d2c800;
-}
-
-.hamburguer{
-    display: none;
-    cursor: pointer;
-}
-
-.bar{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 2px;
-    margin: 5px auto;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-body{
-    font-family: 'Roboto',  sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
     background-image: url(../imagens/desktip.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-size: 100%;
-    background-attachment: fixed;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
-.C-title{
+
+nav {
+    text-align: center;
+    background-color: #a18262;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+a:hover {
+    color: #d2c800;
+}
+
+.C-title {
     margin-left: 5rem;
     margin-top: 10rem;
-}
-.C-title h1{
     color: #fff;
+}
+
+.C-title h1 {
     font-size: 4.8rem;
 }
-.C-title p{
+
+.C-title p {
     color: rgb(231, 208, 208);
     line-height: 2rem;
     font-size: 1.2rem;
     font-weight: 100;
 }
-.C-title button{
+
+.C-title button {
     margin-top: 2rem;
     background-color: #d3ad7f;
     color: #fff;
     font-size: 1.2rem;
-    padding: 10px 10px;
+    padding: 10px 20px;
     cursor: pointer;
+    border: none;
 }
-.C-title button:hover{
+
+.C-title button:hover {
     letter-spacing: 2px;
     transition: 0.3s all;
 }
-footer{
-    position:fixed;
+
+footer {
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #a18262;
-	padding: 10px;
+    padding: 10px;
     text-align: center;
 }
 
-footer p{
-	text-align: center;
-	color: rgb(231, 208, 208);
+footer p {
+    color: rgb(231, 208, 208);
 }
 
-footer a{
-	color: #FFF;
+footer a {
+    color: #FFF;
+    text-decoration: none;
 }
 
-footer a:hover{
-	color: #cdd400;
+footer a:hover {
+    color: #cdd400;
 }
-@media (max-width:768px){
-.hamburguer{
-    display: block;
-}
-.hamburguer.active .bar:nth-child(2){
-    opacity: 0;
-}
-.hamburguer.active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-}
-.hamburguer.active .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-}
-.nav-menu{
-    position: fixed;
-    left: 100%;
-    top: 70px;
-    gap: 0;
-    border-radius: 0 0 15px 15px;
-    background-color: #101026;
-    text-align: center;
-    flex-direction: column;
-    width: 100%;
-    transition: 0.3s;
-}
-.nav-item{
-    margin: 16px 0;
-}
-.nav-menu.active{
-    left: 0;
-}
-}
- 

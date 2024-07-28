@@ -1,63 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-header {
-    background-color: #a18262;
-    padding: 1.1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:' Roboto',sans-serif;
 }
 
-li {
+
+nav {
+    text-align: center;
+    background-color: #a18262;    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu{
+    overflow: hidden;
+  }
+  .menu a{
+    float: right;
+    
+  }
+  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  }
+  
+  
+  li {
+      margin-left: 20px;
+  }
+  
+  
+  a {
+      font-family:  1.2rem 'Roboto', sans-serf;
+      color: #fff;
+      text-decoration: none;
+      
+  }
+
+li{
     list-style: none;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-}
 
-.navBar {
-    min-width: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 34px;
-}
-
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.nav-menu {
+.menu{
     display: flex;
     align-items: center;
     gap: 60px;
 }
 
-.nav-link {
+.a-menu{
+    font-size: 1.15rem;
     transition: 0.5s ease;
 }
-
-.nav-link:hover {
+.a-menu:hover{
     color: #d2c800;
-}
-
-.hamburguer {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 2px;
-    margin: 5px auto;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
 }
 footer {
     position: fixed;
