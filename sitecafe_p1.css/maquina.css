@@ -5,9 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-}
-
-header {
+  }
+  
+  html, body {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  header {
     background-color: #a18262;
     padding: 1.1rem;
     position: fixed;
@@ -15,128 +20,119 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navBar {
-    min-width: 70px;
+  }
+  
+  .navBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 34px;
-}
-
-.logo {
+  }
+  
+  .navBar img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .logo {
     font-size: 2rem;
     font-weight: bold;
-}
-
-.nav-menu {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
     display: flex;
     align-items: center;
     gap: 60px;
-}
-
-.nav-link {
+  }
+  
+  .nav-item {
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
     transition: 0.5s ease;
-}
-
-.nav-link:hover {
+  }
+  
+  .nav-link:hover {
     color: #d2c800;
-}
-
-.hamburguer {
+  }
+  
+  .hamburguer {
     display: none;
     cursor: pointer;
-}
-
-.bar {
+  }
+  
+  .bar {
     display: block;
     width: 28px;
     height: 3px;
-    border-radius: 2px;
     margin: 5px auto;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
-}
-
-/* fim menu */
-body {
-    font-family: 'roboto', sans-serif;
+  }
+  
+  body {
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.container {
+    padding-top: 80px;
+  }
+  
+  .container {
     background-color: #fff;
-    margin-bottom: 60px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 60px;
+  }
+  
+  h2 {
     text-align: center;
     margin-bottom: 20px;
-}
-
-table {
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse;
-}
-
-thead {
+  }
+  
+  thead {
     background-color: #d3b274;
-}
-
-th,
-td {
+  }
+  
+  th, td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ddd;
-}
-
-th {
+  }
+  
+  th {
     color: #fff;
     font-weight: bold;
-}
-
-td img {
+  }
+  
+  td img {
     max-width: 100px;
     height: auto;
-}
-
-tbody tr:nth-child(even) {
+  }
+  
+  tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-}
-
-.figure-caption {
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-    color: #555;
-}
-
-.preco {
-    font-weight: bolder;
+  }
+  
+  .preco {
+    font-weight: bold;
     color: red;
-
-
-}
-
-footer {
+  }
+  
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -144,56 +140,61 @@ footer {
     background-color: #a18262;
     padding: 10px;
     text-align: center;
-}
-
-footer p {
-    text-align: center;
+  }
+  
+  footer p {
     color: rgb(231, 208, 208);
-}
-
-footer a {
-    color: #FFF;
-}
-
-footer a:hover {
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
     color: #cdd400;
-}
-
-@media (max-width:768px) {
+  }
+  
+  @media (max-width: 768px) {
     .hamburguer {
-        display: block;
+      display: block;
     }
-
+  
     .hamburguer.active .bar:nth-child(2) {
-        opacity: 0;
+      opacity: 0;
     }
-
+  
     .hamburguer.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
     }
-
+  
     .hamburguer.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
     }
-
+  
     .nav-menu {
-        position: fixed;
-        left: 100%;
-        top: 70px;
-        gap: 0;
-        border-radius: 0 0 15px 15px;
-        background-color: #101026;
-        text-align: center;
-        flex-direction: column;
-        width: 100%;
-        transition: 0.3s;
+      position: fixed;
+      left: 100%;
+      top: 70px;
+      flex-direction: column;
+      gap: 0;
+      background-color: #101026;
+      width: 100%;
+      border-radius: 0 0 15px 15px;
+      transition: 0.3s;
+      text-align: center;
     }
-
+  
     .nav-item {
-        margin: 16px 0;
+      margin: 16px 0;
     }
-
+  
     .nav-menu.active {
-        left: 0;
+      left: 0;
     }
-}
+  
+    .container {
+      width: 95%;
+    }
+  }
+  
