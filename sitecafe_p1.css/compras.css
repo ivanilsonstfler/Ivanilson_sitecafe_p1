@@ -8,10 +8,13 @@
 
 
 nav {
-    text-align: center;
-    background-color: #a18262;    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    background-color: #a18262;
+    padding: 10px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
   }
   .menu{
     overflow: hidden;
@@ -34,7 +37,7 @@ nav {
   
   
   a {
-      font: 1.2rem 'Roboto', sans-serf;
+      font: 1.2rem 'Roboto';
       color: #fff;
       text-decoration: none;
       
@@ -60,14 +63,18 @@ li{
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
 }
 
 
+
 form {
     width: 600px;
-    margin: 20px auto;
+    margin: auto;
     padding: 20px;
     background-color: #a0522d;
     border-radius: 10px;
@@ -86,6 +93,35 @@ h2 {
 label {
     display: inline-block;
     width: 100px;
+}
+
+#validade {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.maq {
+    width: 100px;
+}
+#saches {
+    width: 100px;
+}
+
+#valor{
+    width: 50px;
+}
+
+#numero {
+    width: 150px;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+
 }
 
 input[type="text"],
@@ -107,7 +143,7 @@ textarea {
 button[type="button"] {
     display: inline-block;
     padding: 5px 10px;
-    background-color: #d2691e;
+    background-color: #1099BB;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -119,7 +155,7 @@ button[type="submit"],
 button[type="reset"] {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #8b4513;
+    background-color: #1099BB;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -129,14 +165,16 @@ button[type="reset"] {
 button[type="submit"]:hover,
 button[type="reset"]:hover,
 button[type="button"]:hover {
-    background-color: #a0522d;
+    background-color: #efc7b3;
 }
 
 .cartao img {
     width: 50px;
     vertical-align: middle;
 }
-
+fieldset{
+    padding: 10px;
+}
 
 footer{
     position:fixed;
