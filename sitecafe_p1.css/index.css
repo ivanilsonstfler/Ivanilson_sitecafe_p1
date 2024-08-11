@@ -19,11 +19,10 @@ body {
 }
 
 nav {
-    text-align: center;
     background-color: #a18262;
     padding: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start; /* Alterado para flex-start para posicionar à esquerda */
     position: fixed;
     width: 100%;
     top: 0;
@@ -110,3 +109,220 @@ footer a {
 footer a:hover {
     color: #cdd400;
 }
+
+#saches
+
+.container {
+    background-color: #4b2c20;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.saches {
+    margin-top: 20px;
+}
+
+.sache {
+    margin-bottom: 20px;
+}
+
+.sache h2 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.sache ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sache li {
+    color: #fff;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#maquinas
+.container {
+    width: 95%;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #d3b274;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  td img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .preco {
+    font-weight: bold;
+    color: red;
+  }
+  #compras
+
+  body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+
+form {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #a0522d;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+#validade {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.maq {
+    width: 100px;
+}
+#saches {
+    width: 100px;
+}
+
+#valor{
+    width: 50px;
+}
+
+#numero {
+    width: 150px;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: calc(100% - 120px);
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 50px;
+    resize: none;
+}
+
+button[type="button"] {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #1099BB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1099BB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover,
+button[type="button"]:hover {
+    background-color: #efc7b3;
+}
+
+.cartao img {
+    width: 50px;
+    vertical-align: middle;
+}
+fieldset{
+    padding: 10px;
+}
+
+

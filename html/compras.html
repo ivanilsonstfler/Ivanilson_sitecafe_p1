@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.html" />
+    <title>Formulário de Compras</title>
+</head>
+<body> 
+            <nav class="menu">
+                <ul>
+                    <li><a class="a-menu" href="./index.html">Início</a></li>
+                    <li><a class="a-menu" href="./saches.html">Sachês</a></li>
+                    <li><a class="a-menu" href="./maquinas.html">Maquinas</a></li>
+                    <li><a class="a-menu" href="./compras.html">Compras</a></li>
+                </ul>
+                </nav>
+        
+    <div class="container">
+        <form>
+
+          <div class="section">
+        <fieldset>
+              <legend><h2>Dados de Identificação</h2></legend>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome"><br>
+              
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" name="cpf"><br>
+              
+              <label for="telefone">Telefone:</label>
+              <input type="text" id="telefone" name="telefone"><br>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"><br>
+              
+              <label for="endereco">Endereço:</label>
+              <input type="text" id="endereco" name="endereco"><br>
+          </div>
+          </fieldset>
+          <div class="section">
+            <fieldset>
+              <legend><h2>Produtos</h2></legend>
+              <label class="maq" for="maquinas">Máquinas:</label>
+              <select id="maquinas" name="maquinas">
+                  <option value="">--</option>
+                  <option value=""><b>Dolce Gusto</b></option>
+                  <option value="">Piccolo</option>
+                  <option value=""><strong>Nespresso</strong></option>
+                  <option value="">inissia C40</option>
+                  <option value="">U C50</option>
+                  <option value=""><strong>Senseo</strong></option>
+                  <option value="">HD7811/96</option>
+              </select><br>
+              
+              <label for="saches">Sachês:</label>
+              <select id="saches" name="saches">
+                  <option value="">--</option>
+                  <option value=""><strong>Dolce Gusto</strong></option>
+                  <option value="">Expresso</option>
+                  <option value="">Descafeinado</option>
+                  <option value=""><strong>Nespresso</strong></option>
+                  <option value="">Livanto</option>
+                  <option value="">Ristretto</option>
+                  <option value="">Vanillo</option>
+                  <option value=""><strong>Senseo</strong></option>
+                  <option value="">Clássico</option>
+                  <option value="">Intenso</option>
+              </select><br>
+              
+              <button type="button">remover</button><br>
+              
+              <textarea id="selecionados" name="selecionados" readonly></textarea><br>
+              
+              <label id="valor" for="valor">Valor:</label>
+              <input type="text" id="valor" name="valor"><br>
+          </div>
+        </fieldset>
+          <div class="section">
+            <fieldset>
+              <legend><h2>Forma de Pagamento</h2></legend>
+              <label>
+                  <input type="radio" name="forma_pagamento" value="cartao"> Cartão
+              </label>
+              <label>
+                  <input type="radio" name="forma_pagamento" value="cheque"> Cheque
+              </label>
+              <label>
+                  <input type="radio" name="forma_pagamento" value="dinheiro"> Dinheiro
+              </label>
+            </fieldset>
+              <br>
+              
+              <div class="cartao">
+                <fieldset>
+                  <legend><h3>Dados do Cartão</h3></legend>
+                  <label>
+                      <input type="radio" name="tipo_cartao" value="visa">
+                      <img src="./imagens/visa.png" alt="Visa">
+                  </label>
+                  <label>
+                      <input type="radio" name="tipo_cartao" value="mastercard">
+                      <img src="./imagens/master.png" alt="MasterCard">
+                  </label>
+
+                  <label>
+                    <input type="radio" name="tipo_cartao" value="mastercard">
+                    <img src="./imagens/amex.png" alt="amex">
+                </label><br>
+                  
+                  <label for="validade">Validade:</label>
+                  <input type="date" id="validade" name="validade" placeholder="MM/AA"><br>
+                  
+                  <label for="numero">Numero:</label>
+                  <input type="text" id="numero" placeholder="0000 0000 0000 0000"><br>
+              </div>
+            </fieldset>
+          </div>
+         
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+      </form>
+    </div>
+    <script src="/index.js"></script>
+    <footer>
+        <p>Desenvolvido por <a href="https://www.instagram.com/ivanilson_sassa" target="_blank">Ivanilson Paixao</a> - 2024</p>
+      </footer>
+</body>
+</html>
