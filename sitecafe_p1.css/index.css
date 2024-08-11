@@ -151,20 +151,14 @@ h1 {
 }
 
 #maquinas
-<<<<<<< HEAD
 .container-maquinas {
-=======
 .container {
->>>>>>> 109d005dbdffbd4241401b19f0ee608a30d4cd98
     width: 95%;
 }
 
 
-<<<<<<< HEAD
 .container-maquinas {
-=======
 .container {
->>>>>>> 109d005dbdffbd4241401b19f0ee608a30d4cd98
     background-color: #fff;
     padding: 20px;
     margin: 0 auto;
@@ -218,11 +212,8 @@ h1 {
   }
   #compras
 
-<<<<<<< HEAD
  .compras {
-=======
   body {
->>>>>>> 109d005dbdffbd4241401b19f0ee608a30d4cd98
     display: flex;
     justify-content: center;
     min-height: 100vh;
