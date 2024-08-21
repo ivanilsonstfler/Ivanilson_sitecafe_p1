@@ -1,141 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <<<<<<< HEAD
     <link rel="stylesheet" href="../sitecafe_p1.css/index.css" />
-=======
+    =======
     <link rel="stylesheet" href="./index.html" />
->>>>>>> 109d005dbdffbd4241401b19f0ee608a30d4cd98
+    >>>>>>> 109d005dbdffbd4241401b19f0ee608a30d4cd98
     <title>Formulário de Compras</title>
-</head>
-<body class="compras"> 
-            <nav class="menu">
-                <ul>
-                    <li><a class="a-menu" href="./index.html">Início</a></li>
-                    <li><a class="a-menu" href="./saches.html">Sachês</a></li>
-                    <li><a class="a-menu" href="./maquinas.html">Maquinas</a></li>
-                    <li><a class="a-menu" href="./compras.html">Compras</a></li>
-                </ul>
-                </nav>
-        
-                <div class="container-compras">
-                  <form>
-              
-                      <div class="section">
-                          <fieldset>
-                              <legend><h2>Dados de Identificação</h2></legend>
-                              <label for="nome">Nome:</label>
-                              <input id="nome" type="text" name="nome">
-              
-                              <label for="cpf">CPF:</label>
-                              <input id="cpf" type="text" name="cpf"><br>
-              
-                              <label for="telefone">Telefone:</label>
-                              <input  id="telefone" type="text" name="telefone" placeholder="(00)000000000">
-              
-                              <label for="email">Email:</label>
-                              <input id="email" type="email" name="email"><br>
-              
-                              <label for="endereco">Endereço:</label>
-                              <input type="text" id="endereco" name="endereco"><br>
-                          </fieldset>
-                      </div>
-              
-                      <div class="section-produtos">
-                          <fieldset>
-                              <legend><h2>Produtos</h2></legend>
-                              
-                              <label for="maquinas">Máquinas:</label>
-                              <select id="maquinas" name="maquinas" onchange="updateSelecionados()">
-                                  <option value="">--</option>
-                                  <optgroup label="Dolce Gusto">
-                                      <option value="Dolce Gusto Piccolo">Piccolo</option>
-                                  </optgroup>
-                                  <optgroup label="Nespresso">
-                                      <option value="Nespresso Inissia C40">Inissia C40</option>
-                                      <option value="Nespresso U C50">U C50</option>
-                                  </optgroup>
-                                  <optgroup label="Senseo">
-                                      <option value="Senseo HD7811/96">HD7811/96</option>
-                                  </optgroup>
-                              </select><br>
-              
-                              <label for="saches">Sachês:</label>
-                              <select id="saches" name="saches" onchange="updateSelecionados()">
-                                  <option value="">--</option>
-                                  <optgroup label="Dolce Gusto">
-                                      <option value="Dolce Gusto Expresso">Expresso</option>
-                                      <option value="Dolce Gusto Descafeinado">Descafeinado</option>
-                                  </optgroup>
-                                  <optgroup label="Nespresso">
-                                      <option value="Nespresso Livanto">Livanto</option>
-                                      <option value="Nespresso Ristretto">Ristretto</option>
-                                      <option value="Nespresso Vanillo">Vanillo</option>
-                                  </optgroup>
-                                  <optgroup label="Senseo">
-                                      <option value="Senseo Clássico">Clássico</option>
-                                      <option value="Senseo Intenso">Intenso</option>
-                                  </optgroup>
-                              </select><br>
-              
-                              <button type="button" onclick="removeSelecionado()">Remover</button><br>
-              
-                              <textarea id="selecionados" name="selecionados" readonly></textarea><br>
-              
-                              <label for="valor">Valor:</label>
-                              <input type="text" id="valor" name="valor" readonly><br>
-                          </fieldset>
-                      </div>
-              
-                      <div class="section-pagamento">
-                          <fieldset>
-                              <legend><h2>Forma de Pagamento</h2></legend>
-                              <label>
-                                  <input type="radio" name="forma_pagamento" value="cartao"> Cartão
-                              </label>
-                              <label>
-                                  <input type="radio" name="forma_pagamento" value="cheque"> Cheque
-                              </label>
-                              <label>
-                                  <input type="radio" name="forma_pagamento" value="dinheiro"> Dinheiro
-                              </label>
-                          </fieldset>
-                      </div>
-                      
-                      <div class="section cartao">
-                          <fieldset>
-                              <legend><h3>Dados do Cartão</h3></legend>
-                              <label>
-                                  <input type="radio" name="tipo_cartao" value="visa">
-                                  <img src="../imagens/visa.png" alt="Visa">
-                              </label>
-                              <label>
-                                  <input type="radio" name="tipo_cartao" value="mastercard">
-                                  <img src="../imagens/master.png" alt="MasterCard">
-                              </label>
-                              <label>
-                                  <input type="radio" name="tipo_cartao" value="amex">
-                                  <img src="../imagens/amex.png" alt="Amex">
-                              </label><br>
-              
-                              <label for="validade">Validade:</label>
-                              <input id="validade" type="month" name="validade"><br>
-              
-                              <label for="numero">Número:</label>
-                              <input type="text" id="numero" name="numero" placeholder="0000 0000 0000 0000"><br>
-                          </fieldset>
-                      </div>
-              
-                      <button type="submit">Enviar</button>
-                      <button type="reset">Limpar</button>
-                  </form>
-              </div>
-              
+  </head>
+  <body class="compras">
+    <nav class="menu">
+      <ul>
+        <li><a class="a-menu" href="./index.html">Início</a></li>
+        <li><a class="a-menu" href="./saches.html">Sachês</a></li>
+        <li><a class="a-menu" href="./maquinas.html">Maquinas</a></li>
+        <li><a class="a-menu" href="./compras.html">Compras</a></li>
+      </ul>
+    </nav>
+
+    <div class="container-compras">
+      <form>
+        <div class="section">
+          <fieldset>
+            <legend><h2>Dados de Identificação</h2></legend>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" name="nome" />
+
+            <label for="cpf">CPF:</label>
+            <input id="cpf" type="text" name="cpf" /><br />
+
+            <label for="telefone">Telefone:</label>
+            <input
+              id="telefone"
+              type="text"
+              name="telefone"
+              placeholder="(00)000000000"
+            />
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" /><br />
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" /><br />
+          </fieldset>
+        </div>
+
+        <div class="section-produtos">
+          <fieldset>
+            <legend><h2>Produtos</h2></legend>
+
+            <label for="maquinas">Máquinas:</label>
+            <select
+              id="maquinas"
+              name="maquinas"
+              onchange="updateSelecionados()"
+            >
+              <option value="">--</option>
+              <optgroup label="Dolce Gusto">
+                <option value="Dolce Gusto Piccolo">Piccolo</option>
+              </optgroup>
+              <optgroup label="Nespresso">
+                <option value="Nespresso Inissia C40">Inissia C40</option>
+                <option value="Nespresso U C50">U C50</option>
+              </optgroup>
+              <optgroup label="Senseo">
+                <option value="Senseo HD7811/96">HD7811/96</option>
+              </optgroup></select
+            ><br />
+
+            <label for="saches">Sachês:</label>
+            <select id="saches" name="saches" onchange="updateSelecionados()">
+              <option value="">--</option>
+              <optgroup label="Dolce Gusto">
+                <option value="Dolce Gusto Expresso">Expresso</option>
+                <option value="Dolce Gusto Descafeinado">Descafeinado</option>
+              </optgroup>
+              <optgroup label="Nespresso">
+                <option value="Nespresso Livanto">Livanto</option>
+                <option value="Nespresso Ristretto">Ristretto</option>
+                <option value="Nespresso Vanillo">Vanillo</option>
+              </optgroup>
+              <optgroup label="Senseo">
+                <option value="Senseo Clássico">Clássico</option>
+                <option value="Senseo Intenso">Intenso</option>
+              </optgroup></select
+            ><br />
+
+            <button type="button" onclick="removeSelecionado()">Remover</button
+            ><br />
+
+            <textarea id="selecionados" name="selecionados" readonly></textarea
+            ><br />
+
+            <label for="valor">Valor:</label>
+            <input type="text" id="valor" name="valor" readonly /><br />
+          </fieldset>
+        </div>
+
+        <div class="section-pagamento">
+          <fieldset>
+            <legend><h2>Forma de Pagamento</h2></legend>
+            <label>
+              <input type="radio" name="forma_pagamento" value="cartao" />
+              Cartão
+            </label>
+            <label>
+              <input type="radio" name="forma_pagamento" value="cheque" />
+              Cheque
+            </label>
+            <label>
+              <input type="radio" name="forma_pagamento" value="dinheiro" />
+              Dinheiro
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="section cartao">
+          <fieldset>
+            <legend><h3>Dados do Cartão</h3></legend>
+            <label>
+              <input type="radio" name="tipo_cartao" value="visa" />
+              <img src="../imagens/visa.png" alt="Visa" />
+            </label>
+            <label>
+              <input type="radio" name="tipo_cartao" value="mastercard" />
+              <img src="../imagens/master.png" alt="MasterCard" />
+            </label>
+            <label>
+              <input type="radio" name="tipo_cartao" value="amex" />
+              <img src="../imagens/amex.png" alt="Amex" /> </label
+            ><br />
+
+            <label for="validade">Validade:</label>
+            <input id="validade" type="month" name="validade" /><br />
+
+            <label for="numero">Número:</label>
+            <input
+              type="text"
+              id="numero"
+              name="numero"
+              placeholder="0000 0000 0000 0000"
+            /><br />
+          </fieldset>
+        </div>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+    </div>
+
     <script src="/index.js"></script>
     <footer>
-        <p>Desenvolvido por <a href="https://www.instagram.com/ivanilson_sassa" target="_blank">Ivanilson Paixao</a> - 2024</p>
-      </footer>
-</body>
+      <p>
+        Desenvolvido por
+        <a href="https://www.instagram.com/ivanilson_sassa" target="_blank"
+          >Ivanilson Paixao</a
+        >
+        - 2024
+      </p>
+    </footer>
+  </body>
 </html>
