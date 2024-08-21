@@ -108,7 +108,7 @@ footer a:hover {
     color: #cdd400;
 }
 
-#saches
+/*saches*/
 
 .container-saches {
     background-color: #4b2c20;
@@ -118,6 +118,8 @@ footer a:hover {
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
+    margin-top: 120px;
+    text-align: center;
 }
 
 h1 {
@@ -127,34 +129,39 @@ h1 {
 
 .saches {
     margin-top: 20px;
+    text-align: center;
 }
 
 .sache {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .sache h2 {
     color: #fff;
     font-size: 18px;
+    text-align: center;
 }
 
 .sache ul {
     list-style: none;
     padding-left: 0;
+    text-align: center;
 }
 
 .sache li {
     color: #fff;
     margin: 5px 0;
     font-size: 16px;
+    text-align: center;
 }
+
 
 /* #maquinas */
-.container-maquinas {
-    width: 95%;
+body{
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+    overflow-y: auto;
 }
-
-
 .container-maquinas {
     background-color: #fff;
     padding: 20px;
@@ -162,51 +169,56 @@ h1 {
     display: grid;
     place-items: center;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    box-shadow: 0 0 10px rgba(203, 3, 3, 0.1);
+    width: 50%;
     max-width: 800px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
-  }
-  
-  h2 {
+}
+
+h2 {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  table {
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  thead {
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal na tabela se necessário */
+}
+
+thead {
     background-color: #d3b274;
-  }
-  
-  th, td {
-    padding: 10px;
+}
+
+th, td {
+    padding: 5px;
     text-align: center;
     border: 1px solid #ddd;
-  }
-  
-  th {
+}
+
+th {
     color: #fff;
     font-weight: bold;
-  }
-  
-  td img {
-    max-width: 100px;
+}
+
+
+
+td img {
+    max-width: 70px;
     height: auto;
-  }
-  
-  tbody tr:nth-child(even) {
+}
+
+
+tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-  }
-  
-  .preco {
+}
+
+.preco {
     font-weight: bold;
     color: red;
-  }
+}
+
   /*compras*/
 
  .compras {
