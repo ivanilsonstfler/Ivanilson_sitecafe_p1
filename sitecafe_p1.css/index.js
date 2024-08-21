@@ -6,6 +6,13 @@ hamburguer.addEventListener("click", () => {
     navMenu.classList.toggle('active');
 })
 
+const hoje = new Date();
+const ano = hoje.getFullYear();
+const mes = (hoje.getMonth() + 1).toString().padStart(2, '0');
+const dataFormatada = `${ano}-${mes}`;
+document.getElementById('validade').value = dataFormatada;
+
+
 function openWindow(machine) {
     let width = 280;
     let height = 530;
@@ -16,7 +23,7 @@ function openWindow(machine) {
 
     let newWindow = window.open("", "", windowFeatures);
 
-    // Adicionando conteúdo à janela aberta
+    
     newWindow.document.write(`
         <html>
         <head>

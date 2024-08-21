@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body {
+.body {
     background: linear-gradient(to bottom, #4b2e2e, #000000);
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +44,7 @@ li {
 
 a {
     font-size: 1.2rem;
-    color: #fff;
+    color: #080808;
     text-decoration: none;
     transition: 0.5s ease;
 }
@@ -159,7 +159,7 @@ h1 {
 
 /* #maquinas */
 body{
-    overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+    overflow-x: auto; 
     overflow-y: auto;
 }
 .container-maquinas {
@@ -221,9 +221,20 @@ tbody tr:nth-child(even) {
 
   /*compras*/
 
+  .container-compras{
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(203, 3, 3, 0.1);
+    width: 50%;
+    max-width: 800px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
  .compras {
-    display: flex;
-    justify-content: center;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
@@ -243,15 +254,32 @@ form {
 
 .section {
     margin-bottom: 20px;
+    background-color: #a18262;
+}
+.section-produtos {
+    background-color: #a18262;
+}
+.section-pagamento{
+background-color: #a18262;
 }
 
 h2 {
     margin-bottom: 10px;
 }
 
-label {
-    display: inline-block;
+
+#nome{
+    width: 250px;
+}
+#cpf{
     width: 100px;
+}
+
+#email{
+    width: 250px;
+}
+#telefone{
+    width: 110px;
 }
 
 #validade {
