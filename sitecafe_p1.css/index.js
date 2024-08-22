@@ -104,3 +104,51 @@ function removerSelecionado() {
     document.getElementById('selecionados').value = '';
     document.getElementById('valor').value = '';
 }
+function validaCPF(cpf) {
+    if (cpf.length !== 11 || isNaN(cpf)) {
+        alert("CPF inválido: Deve conter 11 dígitos numéricos.");
+        return false;
+    }
+
+    const identCPF = parseInt(cpf.slice(0, 9));
+    const digito1 = parseInt(cpf.charAt(9));
+    const digito2 = parseInt(cpf.charAt(10));
+
+    function calculaDV(num) {
+        let soma = 0;
+        for (let i = 2; i < 11; i++) {
+            soma += (num % 10) * i;
+            num = Math.floor(num / 10);
+        }
+        const resto = soma % 11;
+        return (resto > 1) ? (11 - resto) : 0;
+    }
+
+    if (calculaDV(identCPF) !== digito1 || calculaDV(identCPF * 10 + digito1) !== digito2) {
+        alert("CPF inválido: Dígitos verificadores incorretos.");
+        return false;
+    }
+
+    return true;
+}
+
+document.getElementById('cpf').addEventListener('blur', function() {
+    validaCPF(this.value);
+});
+function identificaBandeira() {
+    const numero = document.getElementById('numero').value;
+    const bandeira = document.querySelectorAll('input[name="tipo_cartao"]');
+
+    if (numero.startsWith('4')) {
+        bandeira[0].checked = true;
+    } else if (numero.startsWith('5') && parseInt(numero.slice(0, 2)) >= 51 && parseInt(numero.slice(0, 2)) <= 55) {
+        bandeira[1].checked = true;
+    } else if (numero.startsWith('34') || numero.startsWith('37')) {
+        bandeira[2].checked = true;
+    } else {
+        alert("Número do cartão inválido.");
+        document.getElementById('numero').value = '';
+    }
+}
+
+document.getElementById('numero').addEventListener('keyup', identificaBandeira);
