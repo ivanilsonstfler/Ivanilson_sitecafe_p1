@@ -12,22 +12,20 @@ const mes = (hoje.getMonth() + 1).toString().padStart(2, '0');
 const dataFormatada = `${ano}-${mes}`;
 document.getElementById('validade').value = dataFormatada;
 
+function abrirJanela(maquina) {
+    let largura = 280;
+    let altura = 530;
+    let esquerda = (screen.width - largura) / 2;
+    let topo = (screen.height - altura) / 2;
 
-function openWindow(machine) {
-    let width = 280;
-    let height = 530;
-    let left = (screen.width - width) / 2;
-    let top = (screen.height - height) / 2;
+    let caracteristicasJanela = `width=${largura},height=${altura},top=${topo},left=${esquerda},scrollbars=no`;
 
-    let windowFeatures = `width=${width},height=${height},top=${top},left=${left},scrollbars=no`;
+    let novaJanela = window.open("", "", caracteristicasJanela);
 
-    let newWindow = window.open("", "", windowFeatures);
-
-    
-    newWindow.document.write(`
+    novaJanela.document.write(`
         <html>
         <head>
-            <title>${machine}</title>
+            <title>${maquina}</title>
             <style>
                 body { font-family: Arial, sans-serif; padding: 20px; }
                 img { width: 100%; }
@@ -38,8 +36,8 @@ function openWindow(machine) {
             </style>
         </head>
         <body>
-            <h2>${machine}</h2>
-            <img src="path_to_image_of_${machine}.jpg" alt="${machine}">
+            <h2>${maquina}</h2>
+            <img src="caminho_para_imagem_de_${maquina}.jpg" alt="${maquina}">
             <ul>
                 <li>Produto 1 - R$ XX,XX</li>
                 <li>Produto 2 - R$ XX,XX</li>
@@ -49,35 +47,35 @@ function openWindow(machine) {
         </html>
     `);
 }
-function showDetails(tipo, modelo, fotoSrc, preco) {
-    let fotoId = '';
-    let precoId = '';
+
+function mostrarDetalhes(tipo, modelo, fotoSrc, preco) {
+    let idFoto = '';
+    let idPreco = '';
     
     switch(modelo) {
         case 'Piccolo':
-            fotoId = 'foto-1';
-            precoId = 'preco-1';
+            idFoto = 'foto-1';
+            idPreco = 'preco-1';
             break;
         case 'Inissia C40':
-            fotoId = 'foto-2';
-            precoId = 'preco-2';
+            idFoto = 'foto-2';
+            idPreco = 'preco-2';
             break;
         case 'U C50':
-            fotoId = 'foto-3';
-            precoId = 'preco-3';
+            idFoto = 'foto-3';
+            idPreco = 'preco-3';
             break;
         case 'HD7811/96':
-            fotoId = 'foto-4';
-            precoId = 'preco-4';
+            idFoto = 'foto-4';
+            idPreco = 'preco-4';
             break;
     }
     
-  
-    document.getElementById(fotoId).innerHTML = `<img src="${fotoSrc}" alt="${tipo} ${modelo}" style="width: 100px; display: block; margin: 0 auto;">`;
-
-    document.getElementById(precoId).innerHTML = preco;
+    document.getElementById(idFoto).innerHTML = `<img src="${fotoSrc}" alt="${tipo} ${modelo}" style="width: 100px; display: block; margin: 0 auto;">`;
+    document.getElementById(idPreco).innerHTML = preco;
 }
-function updateSelecionados() {
+
+function atualizarSelecionados() {
     const maquinas = document.getElementById('maquinas').value;
     const saches = document.getElementById('saches').value;
     const selecionados = document.getElementById('selecionados');
@@ -100,10 +98,9 @@ function updateSelecionados() {
     document.getElementById('valor').value = `R$ ${valor},00`;
 }
 
-function removeSelecionado() {
+function removerSelecionado() {
     document.getElementById('maquinas').value = '';
     document.getElementById('saches').value = '';
     document.getElementById('selecionados').value = '';
     document.getElementById('valor').value = '';
 }
-
