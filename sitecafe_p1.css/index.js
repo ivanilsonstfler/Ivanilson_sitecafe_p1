@@ -50,7 +50,6 @@ function openWindow(machine) {
     `);
 }
 function showDetails(tipo, modelo, fotoSrc, preco) {
-    // Identificar a linha da tabela que foi clicada
     let fotoId = '';
     let precoId = '';
     
@@ -73,10 +72,9 @@ function showDetails(tipo, modelo, fotoSrc, preco) {
             break;
     }
     
-    // Adicionar a imagem na coluna "Foto"
+  
     document.getElementById(fotoId).innerHTML = `<img src="${fotoSrc}" alt="${tipo} ${modelo}" style="width: 100px; display: block; margin: 0 auto;">`;
 
-    // Adicionar o preço na coluna "Preço"
     document.getElementById(precoId).innerHTML = preco;
 }
 function updateSelecionados() {
@@ -86,7 +84,6 @@ function updateSelecionados() {
 
     selecionados.value = `Máquina: ${maquinas}\nSachês: ${saches}`;
 
-    // Simulação de cálculo de valor
     let valor = 0;
     if (maquinas.includes('Piccolo')) valor += 340;
     if (maquinas.includes('Inissia C40')) valor += 300;
